@@ -23,8 +23,8 @@ export default function Index({ departments, projects }) {
                                 <p>Type in search query to streamline search</p>
 
 
-                                <div style={{position:'relative'}}>
-                                <SearchComponent />
+                                <div style={{ position: 'relative' }}>
+                                    <SearchComponent />
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ export default function Index({ departments, projects }) {
             <div className="bg-dark">
                 <div className="d-flex flex-column flex-md-row p-2 justify-content-center align-items-center">
                     <div className="text-light  text-center lead mx-md-3">Over <span className="fw-bold">200</span> resources publised. Create publisher account.</div>
-                    <button className="btn btn-danger mt-2 mt-md-0">Create Account</button>
+                    <a className="btn btn-danger mt-2 mt-md-0" href="https://wa.me/2349017283616?text= Hello Joshua, i'll love to register on mypapers.shop as a partner... ">Create Account</a>
                 </div>
             </div>
 

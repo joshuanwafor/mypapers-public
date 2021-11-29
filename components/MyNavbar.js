@@ -1,9 +1,7 @@
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Link from 'next/link';
+
 import UserContext from '../lib/userContext';
 import Router from 'next/router';
-
+import Link from "next/link"
 import Cookies from 'js-cookie';
 import { useContext } from 'react';
 
@@ -32,17 +30,17 @@ function MyNavbar() {
               </Link>
             </li>
             <li class="nav-item">
-            <Link href="/departments">
-              <a class="nav-link">Departments</a>
+              <Link href="/departments">
+                <a class="nav-link">Departments</a>
               </Link>
             </li>
-         
+
             <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 More
               </a>
-             
+
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Get help</a></li>
                 <li><a class="dropdown-item" href="#">Find support</a></li>
@@ -55,8 +53,8 @@ function MyNavbar() {
               </ul>
             </li>
             <li class="nav-item">
-            <Link href="/about">
-              <a class="nav-link">About</a>
+              <Link href="/about">
+                <a class="nav-link">About</a>
               </Link>
             </li>
           </ul>
@@ -64,8 +62,12 @@ function MyNavbar() {
             <div class="d-flex lead align-items-center">
               <i class="bi bi-facebook mx-2 ml-0"></i>
               <i class="bi bi-whatsapp mx-2"></i>
-              <i class="bi bi-envelope mx-2"></i>
-              <a class="btn d-block btn-danger mx-2 mr-0" type="submit" href="https://app.mypapers.shop">Explore</a>
+              <a href = "mailto: abc@example.com"><i class="bi bi-envelope mx-2"></i></a>
+              <span>
+                <Link href="/projects">
+                  <a class="btn d-block btn-danger mx-2 mr-0" type="submit" >Explore</a>
+                </Link>
+              </span>
             </div>
           </div>
         </div>

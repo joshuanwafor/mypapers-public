@@ -16,7 +16,7 @@ export default function Index({ departments }) {
               <h1 className="fw-bold text-light">Project resources for everyone.</h1>
               <p className="md-lead text-light">Find project resouces for your project work</p>
 
-              <SearchComponent/>
+              <SearchComponent />
 
             </div>
           </div>
@@ -25,7 +25,7 @@ export default function Index({ departments }) {
       <div className="bg-dark">
         <div className="d-flex flex-column flex-md-row p-4 justify-content-center align-items-center">
           <div className="text-light  text-center lead mx-md-3">Over <span className="fw-bold">200</span> resources publised. Create publisher account.</div>
-          <button className="btn btn-danger mt-2 mt-md-0 btn-lg">Create Account</button>
+          <a className="btn btn-danger mt-2 mt-md-0 btn-lg" href="https://wa.me/2349017283616?text= Hello Joshua, i'll love to register on mypapers.shop as a partner... ">Create Account</a>
         </div>
       </div>
 
