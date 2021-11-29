@@ -38,7 +38,7 @@ export default function Index({ departments }) {
             return <div className="col-12 col-md-4 my-2">
               <Link href={"/projects?department_id=" + v.id}>
                 <a className="text-decoration-none text-body">
-                <TaxonomyCard {...v} />
+                  <TaxonomyCard {...v} />
                 </a>
               </Link>
             </div>

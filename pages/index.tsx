@@ -3,7 +3,8 @@ import Footer from "../components/footer"
 import Link from "next/link"
 import TaxonomyCard from "../components/taxonomy-card"
 import "../style.css"
-import {getProjects,getDepartments} from "../lib/actions"
+import { getProjects, getDepartments } from "../lib/actions"
+import { SearchComponent } from '../components/search-component';
 export default function Index({ departments }) {
   return (
     <>
@@ -14,12 +15,8 @@ export default function Index({ departments }) {
             <div className="col-md-6">
               <h1 className="fw-bold text-light">Project resources for everyone.</h1>
               <p className="md-lead text-light">Find project resouces for your project work</p>
-              <div className="input-group input-group-lg">
-                <input type="text" className="form-control  form-control-lg shadow-none outline-none"
-                  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
-                <button className="btn btn-primary" type="button" id="button-addon2"><i
-                  className="bi bi-search"></i></button>
-              </div>
+
+              <SearchComponent/>
 
             </div>
           </div>
@@ -41,7 +38,7 @@ export default function Index({ departments }) {
               <Link href={"/projects?department_id=" + v.id}>
                 <a className="text-decoration-none text-body">
                   <TaxonomyCard {...v} />
-                  </a>
+                </a>
               </Link>
             </div>
           })}

@@ -5,6 +5,8 @@ import ProjectCard from "../components/project-card";
 import "../style.css";
 import { useRouter } from 'next/router';
 import { getDepartments, getProjects } from '../lib/actions';
+import React from 'react';
+import { SearchComponent } from '../components/search-component';
 
 export default function Index({ departments, projects }) {
     let { query: { department_id } } = useRouter();
@@ -13,13 +15,17 @@ export default function Index({ departments, projects }) {
         <>
             <MyNavbar></MyNavbar>
             <div className="bg-light">
-                <div className="container-fluid">
+                <div className="container">
                     <div className="border-bottom d-flex align-items-center">
                         <div className="bg-ligh" style={{ flex: 1 }}>
                             <div className="px-0 py-5 mb-0 text-center">
                                 <h1 className="fw-bold mb-3">All Research works unfiltered</h1>
                                 <p>Streamline search by selecting field</p>
-                                <p>{department_id}</p>
+
+
+                                <div style={{position:'relative'}}>
+                                <SearchComponent />
+                                </div>
                             </div>
                         </div>
                     </div>
