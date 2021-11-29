@@ -59,7 +59,7 @@ export async function getStaticProps() {
   //  passed to the `Home` component
   return {
     props: {
-      departments: await data.json()
+      departments: data
     }
   }
 }
