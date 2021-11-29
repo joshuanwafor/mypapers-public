@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 // ensure all pages have Bootstrap CSS
+import Head from "next/head"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import UserContext from '../lib/userContext';
 
@@ -9,7 +10,9 @@ function MyApp({ Component, pageProps }) {
   const [user, setUser] = useState(null);
 
   return <UserContext.Provider value={[user, setUser]}>
-
+    <Head>
+      <meta name="google-site-verification" content="ZTogXTqLTQ_kjOF8i4Ln857wxW5S8hhG0KMcm8z8F7Y" />
+    </Head>
     <style>
       @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
     </style>

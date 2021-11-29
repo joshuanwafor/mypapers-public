@@ -7,12 +7,6 @@ import { useContext } from 'react';
 
 function MyNavbar() {
 
-  function onLogout() {
-    Cookies.set('jwt', '');
-    setUserContext(undefined);
-    Router.push('/login');
-  }
-
   return <div>
     <nav class="navbar fixed-top navbar-expand-lg shadow shadow-sm navbar-light bg-light "
       style={{ borderTop: "3px solid rgb(255, 137, 78)" }}>
@@ -60,9 +54,9 @@ function MyNavbar() {
           </ul>
           <div class="d-flex align-items-center">
             <div class="d-flex lead align-items-center">
-              <i class="bi bi-facebook mx-2 ml-0"></i>
-              <i class="bi bi-whatsapp mx-2"></i>
-              <a href = "mailto: abc@example.com"><i class="bi bi-envelope mx-2"></i></a>
+              <a href="https://web.facebook.com/MyPapersshop-106198405234731"><i class="bi bi-facebook mx-2 ml-0"></i></a>
+              <a href="https://wa.me/2349017283616?text= Hey Mypapers.shop admin. Want to know more about this"><i class="bi bi-whatsapp mx-2"></i></a>
+              <a href="mailto: joshuanwafor01@gmail.com"><i class="bi bi-envelope mx-2"></i></a>
               <span>
                 <Link href="/projects">
                   <a class="btn d-block btn-danger mx-2 mr-0" type="submit" >Explore</a>
