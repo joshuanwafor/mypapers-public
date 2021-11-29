@@ -9,8 +9,6 @@ import { useContext } from 'react';
 
 function MyNavbar() {
 
-  const [, setUserContext] = useContext(UserContext);
-
   function onLogout() {
     Cookies.set('jwt', '');
     setUserContext(undefined);
@@ -21,7 +19,7 @@ function MyNavbar() {
     <nav class="navbar fixed-top navbar-expand-lg shadow shadow-sm navbar-light bg-light "
       style={{ borderTop: "3px solid rgb(255, 137, 78)" }}>
       <div class="container-fluid px-md-5">
-        <a class="navbar-brand" href="/">MyPapers.shop</a>
+        <a class="navbar-brand" href="/">MyPapers</a>
         <span class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -35,7 +33,7 @@ function MyNavbar() {
             </li>
             <li class="nav-item">
             <Link href="/departments">
-              <a class="nav-link">Departmens</a>
+              <a class="nav-link">Departments</a>
               </Link>
             </li>
          
