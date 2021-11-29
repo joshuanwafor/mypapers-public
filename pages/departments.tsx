@@ -15,7 +15,7 @@ export default function Index({ departments }) {
           <div className="border-bottom d-flex align-items-center">
             <div className="bg-light" style={{ flex: 1 }}>
               <div className="px-0 py-5 mb-0 text-center">
-                <h1 class="fw-bold mb-3">All Departments</h1>
+                <h1 className="fw-bold mb-3">All Departments</h1>
                 <p>Projects are grouped based on departments and other criteria <br /> Find your departmen to streamline search results </p>
               </div>
             </div>

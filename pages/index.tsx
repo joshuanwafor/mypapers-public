@@ -9,16 +9,16 @@ export default function Index({ departments }) {
     <>
       <MyNavbar></MyNavbar>
       <div id="cover">
-        <div class="container-fluid py-5 px-md-5">
-          <div class="row align-items-center justify-content-center text-center" style={{ minHeight: "60vh" }}>
-            <div class="col-md-6">
-              <h1 class="fw-bold text-light">Project resources for everyone.</h1>
-              <p class="md-lead text-light">Find project resouces for your project work</p>
-              <div class="input-group input-group-lg">
-                <input type="text" class="form-control  form-control-lg shadow-none outline-none"
+        <div className="container-fluid py-5 px-md-5">
+          <div className="row align-items-center justify-content-center text-center" style={{ minHeight: "60vh" }}>
+            <div className="col-md-6">
+              <h1 className="fw-bold text-light">Project resources for everyone.</h1>
+              <p className="md-lead text-light">Find project resouces for your project work</p>
+              <div className="input-group input-group-lg">
+                <input type="text" className="form-control  form-control-lg shadow-none outline-none"
                   aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" />
-                <button class="btn btn-primary" type="button" id="button-addon2"><i
-                  class="bi bi-search"></i></button>
+                <button className="btn btn-primary" type="button" id="button-addon2"><i
+                  className="bi bi-search"></i></button>
               </div>
 
             </div>
