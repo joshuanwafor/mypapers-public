@@ -3,7 +3,7 @@ export default function DepartmentCard(props) {
     return (<div class="card block text-decoration-none text-dark h-100 shadow text-decoration-none" style={{ borderBottom: " 4px solid rgb(11, 139, 199)" }} >
             <div class="card-body h-100">
                 <div class="">
-                    <span class="p-3">
+                    <span class="pb-4">
                         <i style={{ color: "rgb(10, 94, 10);" }} class="bi bi-collection lead"></i>
                     </span>
                 </div>

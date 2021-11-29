@@ -39,9 +39,8 @@ export default function Index({ departments }) {
 
             return <div className="col-12 col-md-4 my-2">
               <Link href={"/projects?department_id=" + v.id}>
-                <a>
+              
                   <TaxonomyCard {...v} />
-                </a>
               </Link>
             </div>
           })}
