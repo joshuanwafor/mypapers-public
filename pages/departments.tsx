@@ -15,7 +15,6 @@ export default function Index({ departments }) {
           <div className="border-bottom d-flex align-items-center">
             <div className="bg-light" style={{ flex: 1 }}>
               <div className="px-0 py-5 mb-0 text-center">
-                Project Topics and Materials Browse Contents, Place Order and Download Your Project
                 <h1 className="fw-bold mb-3">Project Topics by departments</h1>
                 <p>Browse Contents, Place Order and Download Your Project </p>
               </div>
@@ -38,7 +37,9 @@ export default function Index({ departments }) {
             console.log(v)
             return <div className="col-12 col-md-4 my-2">
               <Link href={"/projects?department_id=" + v.id}>
+                <a className="text-decoration-none text-body">
                 <TaxonomyCard {...v} />
+                </a>
               </Link>
             </div>
           })}

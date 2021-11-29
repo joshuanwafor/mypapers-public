@@ -44,9 +44,8 @@ export default function Index({ departments, projects }) {
                                 <div>
                                 </div>
                             </div>
-
                             {projects.map(v => {
-                                return <div style={{borderBottom:"1px solid gray"}}>
+                                return <div style={{ borderBottom: "1px solid gray" }}>
                                     <ProjectCard {...v} />
                                 </div>
                             })}
@@ -100,7 +99,7 @@ export async function getStaticProps() {
     return {
         props: {
             departments: data,
-            projects: projects 
+            projects: projects
         }
     }
 }
