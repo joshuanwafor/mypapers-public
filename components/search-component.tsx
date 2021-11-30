@@ -18,7 +18,7 @@ export function SearchComponent() {
     return <div className="w-100">
         <div className="input-group input-group-lg overflow-hidden" style={{ position: "relative" }}>
             <input type="text" className="form-control form-control-lg shadow-none outline-none"
-                placeholder="Search Reposiory"
+                placeholder="Search Repository"
                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" onChange={(ev) => {
                     updateTerm(ev.target.value)
                     project_index.search(searchterm).then(v => {

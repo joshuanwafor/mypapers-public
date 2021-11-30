@@ -12,7 +12,7 @@ export default function Footer() {
                                 <h2>Sell projects</h2>
                                 <p>Completing a final year project has never been easy, earn some money as you
                                     help others with finished  project resources.</p>
-                               <Link href=""><a class="btn btn-outline-light" type="button">Get started</a></Link>
+                                <a class="btn btn-outline-light" href="https://wa.me/2349017283616?text= Hello Joshua, i'll love to register on mypapers.shop as a partner... " type="button">Get started</a>
                             </div>
                         </div>
                         <div class="col-md-6 my-2">

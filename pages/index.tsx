@@ -14,7 +14,7 @@ export default function Index({ departments }) {
           <div className="row align-items-center justify-content-center text-center" style={{ minHeight: "60vh" }}>
             <div className="col-md-6">
               <h1 className="fw-bold text-light">Project resources for everyone.</h1>
-              <p className="md-lead text-light">Find project resouces for your project work</p>
+              <p className="md-lead text-light">Find project resources for your project work</p>
 
               <SearchComponent />
 
