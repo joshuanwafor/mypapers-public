@@ -51,7 +51,7 @@ export default function Index({ departments, projects }) {
                                 </div>
                             </div>
                             {projects.map(v => {
-                                return <div style={{ borderBottom: "1px solid gray" }}>
+                                return <div style={{ borderBottom: "1px solid rgba(200,200,200,.5)" }}>
                                     <ProjectCard {...v} />
                                 </div>
                             })}

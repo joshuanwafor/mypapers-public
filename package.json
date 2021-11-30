@@ -18,7 +18,9 @@
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
-    "react-instantsearch-dom": "^6.16.0"
+    "react-instantsearch-dom": "^6.16.0",
+    "rich-markdown-editor": "^11.20.0",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@types/node": "^16.11.9",

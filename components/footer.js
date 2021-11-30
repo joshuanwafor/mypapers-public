@@ -1,5 +1,5 @@
 import React from "react"
-
+import Link from "next/link"
 
 export default function Footer() {
     return <div>
@@ -10,17 +10,17 @@ export default function Footer() {
                         <div class="col-md-6 my-2">
                             <div class="h-100 p-5 text-white bg-dark rounded-3">
                                 <h2>Sell projects</h2>
-                                <p>Getting and finishing up a final year project has never been easy, earn some money as you
-                                    help others with finished final year projects. We've got you.</p>
-                                <button class="btn btn-outline-light" type="button">Get started</button>
+                                <p>Completing a final year project has never been easy, earn some money as you
+                                    help others with finished  project resources.</p>
+                               <Link href=""><a class="btn btn-outline-light" type="button">Get started</a></Link>
                             </div>
                         </div>
                         <div class="col-md-6 my-2">
                             <div class="h-100 p-5 bg-light border rounded-3">
                                 <h2>Find project resources</h2>
-                                <p>Need not worry about an idea to work on, find ideas to fully completed projects out
-                                    finalyearcruz, we've got you covered all round... </p>
-                                <button class="btn btn-outline-secondary" type="button">Explore</button>
+                                <p>Find project resources your could use as a guide to complete your research work.
+                                    We got you covered all round... </p>
+                                <Link href="/projects"><a class="btn btn-outline-secondary" type="button">Explore</a></Link>
                             </div>
                         </div>
                     </div>

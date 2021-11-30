@@ -1,7 +1,8 @@
 import MyNavbar from '../../components/MyNavbar';
 import Footer from "../../components/footer"
+import Editor from "rich-markdown-editor"
 import { getProject } from '../../lib/actions';
-
+import Link from "next/link"
 
 export default function ProjectPage({ project }) {
     return <div>
@@ -11,8 +12,8 @@ export default function ProjectPage({ project }) {
             <div className="container py-2">
                 <nav aria-label="breadcrumb bg-transparent py-0">
                     <ol className="breadcrumb bg-transparent  my-0">
-                        <li className="breadcrumb-item  m-0"><a href="/">Home</a></li>
-                        <li className="breadcrumb-item  my-0"><a href="/taxonomies">Library</a></li>
+                        <li className="breadcrumb-item  m-0"><Link href="/"><a>Home</a></Link></li>
+                        <li className="breadcrumb-item  my-0"><Link href="/projects"><a >Library</a></Link></li>
                         <li className="breadcrumb-item active  my-0" aria-current="page">{project.title}</li>
                     </ol>
                 </nav>
@@ -51,7 +52,7 @@ export default function ProjectPage({ project }) {
                             Abstract
                         </span><br />
                         <div className="mt-2"><span><i className="bi bi-layers"></i>
-                            {project.chapters_count ?? 0}Chapters
+                            {project.chapters_count ?? 0} {" "}Chapters
                         </span></div>
                     </div>
 
@@ -83,7 +84,7 @@ export default function ProjectPage({ project }) {
                         Descripion
                     </h3>
                     <article>
-                        {project.body}
+                        < Editor defaultValue={project.body} readOnly />
                     </article>
                 </div>
             </div>
