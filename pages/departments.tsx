@@ -33,7 +33,7 @@ export default function Index({ departments }) {
       <div className="container my-5">
         <h3>Search project by departments</h3>
         <div className="row">
-          {departments.map(v => {
+          {departments.sort((a,b)=>  a.name.localeCompare(b.name)).map(v => {
             console.log(v)
             return <div className="col-12 col-md-4 my-2">
               <Link href={"/projects?department_id=" + v.id}>

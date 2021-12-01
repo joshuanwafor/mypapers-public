@@ -48,7 +48,7 @@ export default function Index({ departments, projects }) {
                                 <div>
                                 </div>
                             </div>
-                            {projects.map(v => {
+                            {projects.sort((a, b) => a.title.localeCompare(b.title)).map(v => {
                                 return <div style={{ borderBottom: "1px solid rgba(200,200,200,.5)" }}>
                                     <ProjectCard {...v} />
                                 </div>
@@ -62,7 +62,7 @@ export default function Index({ departments, projects }) {
                             </div>
                             <div className="border-top">
 
-                                {departments.map(v => {
+                                {departments.sort((a,b)=>  a.name.localeCompare(b.name)).map(v => {
                                     return <div className="col-12 col-md-12 my-2 mb-0 border-bottom">
                                         <Link href={"/projects?department_id=" + v.id}>
                                             <a className="p-3 py-2">
