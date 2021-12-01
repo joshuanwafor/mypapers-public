@@ -6,6 +6,7 @@ import "../style.css"
 export default function Index({ departments }) {
     return (
         <>
+
             <MyNavbar></MyNavbar>
             <div id="cover">
                 <div className="container-fluid py-5 px-md-5">
