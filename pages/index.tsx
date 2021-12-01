@@ -25,7 +25,7 @@ export default function Index({ departments }) {
       <div className="bg-dark">
         <div className="d-flex flex-column flex-md-row p-4 justify-content-center align-items-center">
           <div className="text-light  text-center lead mx-md-3">Over <span className="fw-bold">200</span> resources publised. Create publisher account.</div>
-          <a className="btn btn-danger mt-2 mt-md-0 btn-lg" href="https://wa.me/2349017283616?text= Hello Joshua, i'll love to register on mypapers.shop as a partner... ">Create Account</a>
+          <a className="btn btn-danger mt-2 mt-md-0 btn-lg" href="https://app.mypapers.shop/">Create Account</a>
         </div>
       </div>
 
@@ -33,7 +33,6 @@ export default function Index({ departments }) {
         <h3>Search project by departments</h3>
         <div className="row">
           {departments.map(v => {
-
             return <div className="col-12 col-md-4 my-2">
               <Link href={"/projects?department_id=" + v.id}>
                 <a className="text-decoration-none text-body">
