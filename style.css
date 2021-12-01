@@ -6,6 +6,16 @@
     background-size: cover;
 }
 
+
+#welcomecover {
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background: url('/new.jpg');
+    background-size: cover;
+}
+
+
+
 body{
     padding-top:  3.5rem;
 }
