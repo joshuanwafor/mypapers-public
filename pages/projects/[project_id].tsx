@@ -7,19 +7,6 @@ import Link from "next/link"
 export default function ProjectPage({ project }) {
     return <div>
         <MyNavbar />
-
-        <div className="border-bottom">
-            <div className="container py-2">
-                <nav aria-label="breadcrumb bg-transparent py-0">
-                    <ol className="breadcrumb bg-transparent  my-0">
-                        <li className="breadcrumb-item  m-0"><Link href="/"><a>Home</a></Link></li>
-                        <li className="breadcrumb-item  my-0"><Link href="/projects"><a >Library</a></Link></li>
-                        <li className="breadcrumb-item active  my-0" aria-current="page">{project.title}</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-
         <div className="container my-5">
             <div className="row  border rounded">
                 <div className="col-12 col-md-12 p-2 p-md-5">
