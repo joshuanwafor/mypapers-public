@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 import Link from "next/link";
 import TaxonomyCard from "../components/taxonomy-card";
 import "../style.css";
+import { getDepartments } from "../lib/actions";
 export default function Index({ departments }) {
   return (
     <>
@@ -82,7 +83,21 @@ export default function Index({ departments }) {
           </p>
         </article>
       </div>
-      <Footer />
+      <Footer departments={departments} />
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  // Get external data from the file system, API, DB, etc.
+  const data = await getDepartments();
+
+  // The value of the `props` key will be
+  //  passed to the `Home` component
+  return {
+    props: {
+      departments: data,
+    },
+  };
 }

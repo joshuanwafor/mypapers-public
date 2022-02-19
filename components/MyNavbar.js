@@ -3,13 +3,10 @@ import Link from "next/link";
 function MyNavbar() {
   return (
     <div>
-      <nav
-        class="navbar fixed-top navbar-expand-lg shadow shadow-sm navbar-dark bg-dark"
-        style={{ borderTop: "3px solid rgb(255, 137, 78)" }}
-      >
+      <nav class="navbar fixed-top navbar-expand-lg shadow shadow-sm navbar-dark bg-dark">
         <div class="container-fluid px-md-5">
           <a class="navbar-brand" href="/">
-            MyPapers
+            <img src="/logo.jpg" width={90} />
           </a>
           <span
             class="navbar-toggler border-0"
