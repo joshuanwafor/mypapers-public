@@ -1,5 +1,6 @@
 import Footer from "../components/footer";
 import MyNavbar from "../components/header";
+import { getDepartments } from "../lib/actions";
 
 export default function ({ departments }) {
   return (
@@ -160,6 +161,3 @@ export async function getStaticProps() {
   };
 }
 
-function getDepartments() {
-  throw new Error("Function not implemented.");
-}
