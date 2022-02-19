@@ -1,6 +1,6 @@
 
 let host = "http://localhost:8000";
-let production = "http://mypapers.herokuapp.com"
+let production = ""
 export async function getDepartments() {
   let res = await fetch(process.env.HOST + "/rest/taxonomies");
   return await res.json();

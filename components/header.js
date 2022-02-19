@@ -3,7 +3,7 @@ import Link from "next/link";
 function MyNavbar() {
   return (
     <div>
-      <nav class="navbar fixed-top navbar-expand-lg shadow shadow-sm navbar-dark bg-dark">
+      <nav class="navbar sticky-top navbar-expand-lg shadow shadow-sm navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="/">
             <img src="/logo.jpg" width={90} />

@@ -12,7 +12,7 @@ import { GetServerSideProps } from "next";
 
 export default function Index({ departments, projects }) {
   let {
-    query: { department_id },
+    query: { department_id, query },
   } = useRouter();
 
   return (
@@ -23,11 +23,7 @@ export default function Index({ departments, projects }) {
           <div className="border-bottom d-flex align-items-center">
             <div className="bg-ligh" style={{ flex: 1 }}>
               <div className="px-0 py-5 mb-0 text-center">
-                <h1 className="fw-bold mb-3">Find project resources</h1>
-                <p>Type in query to streamline search results</p>
-                <div style={{ position: "relative" }}>
-                  <SearchComponent />
-                </div>
+                <h1 className="fw-bold mb-3">Results for {query}</h1>
               </div>
             </div>
           </div>
