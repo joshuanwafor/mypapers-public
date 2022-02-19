@@ -1,4 +1,4 @@
-import MyNavbar from '../../components/MyNavbar';
+import MyNavbar from '../../components/header';
 import Footer from "../../components/footer"
 import Editor from "rich-markdown-editor"
 import { getProject } from '../../lib/actions';

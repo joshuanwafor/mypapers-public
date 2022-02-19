@@ -52,16 +52,8 @@ export default function Footer(props) {
         <div class="container">
           <div class="row justify-content-between">
             <div class="col-lg-4 mb-4 mb-lg-0">
-              <a
-                class="footer-brand mr-lg-5 d-flex"
-                href="@@path_common/index.html"
-              >
-                <img
-                  src="@@path/assets/img/brand/light.svg"
-                  height="35"
-                  class="mr-3"
-                  alt="Footer logo"
-                />
+              <a class="footer-brand mr-lg-5 d-flex" href="/">
+                <img src="/logo.jpg" width={90} />
               </a>
               <p class="my-4 text-light">
                 {" "}
@@ -124,8 +116,8 @@ export default function Footer(props) {
             <div class="col pb-4 mb-md-0">
               <div class="d-flex text-center justify-content-center align-items-center">
                 <p class="font-weight-normal mb-0">
-                  © <a href="#">KusuConsult</a>{" "}
-                  <span class="current-year"></span>. All rights reserved.
+                  © <a href="#">Lab-One</a> <span class="current-year"></span>.
+                  All rights reserved.
                 </p>
               </div>
             </div>

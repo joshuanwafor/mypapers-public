@@ -4,7 +4,7 @@ function MyNavbar() {
   return (
     <div>
       <nav class="navbar fixed-top navbar-expand-lg shadow shadow-sm navbar-dark bg-dark">
-        <div class="container-fluid px-md-5">
+        <div class="container">
           <a class="navbar-brand" href="/">
             <img src="/logo.jpg" width={90} />
           </a>
@@ -20,7 +20,7 @@ function MyNavbar() {
             <span class="navbar-toggler-icon"></span>
           </span>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end col-12">
               <li class="nav-item">
                 <Link href="/projects">
                   <a class="nav-link active" aria-current="page">
@@ -83,9 +83,7 @@ function MyNavbar() {
                 </Link>
               </li>
             </ul>
-            <div class="d-flex align-items-center">
-              <div class="d-flex lead align-items-center"></div>
-            </div>
+            <div class="d-flex align-items-center"></div>
           </div>
         </div>
       </nav>

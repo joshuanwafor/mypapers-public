@@ -1,6 +1,6 @@
 import Footer from "../components/footer";
 import Link from "next/link";
-import MyNavbar from "../components/MyNavbar";
+import MyNavbar from "../components/header";
 import TaxonomyCard from "../components/taxonomy-card";
 import { getDepartments } from "../lib/actions";
 import "../style.css";
