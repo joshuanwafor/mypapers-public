@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
+
 import { usePaystackPayment } from "react-paystack";
+import { makeProjectPayment } from "../../lib/actions";
 
 export function ProjectPay({ project }) {
   let [email, setEmail] = React.useState("pending");
@@ -11,19 +13,10 @@ export function ProjectPay({ project }) {
       alert("Please type in a valid email");
       return;
     }
-    axios
-      .post(process.env.HOST + "/rest/make-payment", {
-        email: email,
-        project_id: project.id,
-      })
-      .then((res) => {
-        console.log(res.data);
 
-        window.open(res.data, "_top");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    makeProjectPayment(email, project.id).then((url) => {
+      window.open(url, "_top");
+    });
   }
 
   const NOTE = (
