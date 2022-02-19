@@ -17,15 +17,20 @@ export async function getProject(projectid: string) {
   return await res.json();
 }
 
-export async function makeProjectPayment(email: string, project: string): Promise<string> {
-  console.log(process.env)
+export async function makeProjectPayment(
+  email: string,
+  project: string
+): Promise<string> {
   try {
-    console.log("before make payment")
- 
-    let res = await axios.post(process.env.NEXT_PUBLIC_HOST + "/rest/make-payment", {
-      email: email,
-      project_id: project,
-    });
+    console.log("before make payment");
+
+    let res = await axios.post(
+      process.env.NEXT_PUBLIC_HOST + "/rest/make-payment",
+      {
+        email: email,
+        project_id: project,
+      }
+    );
     console.log(res.data);
     return res.data;
   } catch (err) {
