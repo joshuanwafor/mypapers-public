@@ -3,6 +3,7 @@ import Footer from "../../components/footer";
 import Editor from "rich-markdown-editor";
 import { getDepartments, getProject, getProjects } from "../../lib/actions";
 import { ProjectPay } from "../../components/organisms/project-pay";
+import { ProjectDownload } from "../../components/organisms/project-download";
 
 export default function ProjectPage({ project, departments }) {
   return (
@@ -54,10 +55,7 @@ export default function ProjectPage({ project, departments }) {
             </div>
 
             <div className="d-flex">
-              <button className="btn btn-primary btn-lg mr-2">
-                <i className="bi bi-download"></i>
-                Download DocX
-              </button>
+              <ProjectDownload project={project} />
               <div style={{ width: 12 }}></div>
               <ProjectPay project={project} />
             </div>

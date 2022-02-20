@@ -37,3 +37,21 @@ export async function makeProjectPayment(
     throw err;
   }
 }
+
+export async function downloadProjectResource(email: string, project: string): Promise<string> {
+  try {
+    console.log("before download");
+
+    let res = await axios.post(
+      process.env.NEXT_PUBLIC_HOST + "/rest/make-download",
+      {
+        email: email,
+        project_id: project
+      }
+    );
+    console.log(res.data);
+    return res.data;
+  } catch (err) {
+    console.log(err)
+  }
+}
