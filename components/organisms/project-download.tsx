@@ -16,6 +16,8 @@ export function ProjectDownload({ project }) {
 
     downloadProjectResource(email, project.id).then((url) => {
       window.open(url, "_top");
+    }).catch(err=>{
+      alert("Can't download this resource until you")
     });
   }
 

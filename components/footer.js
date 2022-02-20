@@ -18,7 +18,7 @@ export default function Footer(props) {
                   </p>
                   <a
                     class="btn btn-outline-light"
-                    href="https://wa.me/2349017283616?text= Hello Joshua, i'll love to register on mypapers.shop as a partner... "
+                    href="https://app.mypapers.shop"
                     type="button"
                   >
                     Get started
